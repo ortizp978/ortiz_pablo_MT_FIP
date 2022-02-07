@@ -17,25 +17,40 @@
   <div id="siteContainer">
 
     <header id="mainHeader">
-      <div id="logo"><p>Logo</p></div> <!--end logo -->
-      <nav id="mainNav"><p>Nav</p></nav> <!--end mainNav -->
+      <div id="logo">
+        <a href="index.html"><img src="images/header_logo.svg" alt="Tilex Logo"></a>
+      </div> <!--end logo -->
+      <nav id="mainNav">
+        <h1 class="hidden">Main Navigation</h1>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="products.html">PRODUCTS</a></li>
+            <li><a href="advertisement.html">OUR LANGUAGE</a></li>
+            <li><a class="active" href="contact.html">CONTACT</a></li>
+        </ul>
+      </nav> <!--end mainNav -->
     </header> <!--end mainHeader -->
 
     <section id="homeCover">
-      <div id="heroImage"><p>Hero Image<br>contact</p></div> <!--end heroImage Text -->
-      <div id="contactForm">
-        <h1>Contact</h1>
-        <h2>Name</h2>
-        <h3>Last Name</h3>
-        <h4>Email</h4>
-        <h4>Subject</h4>
-        <h5>Message</h5>
-        <h2>Send</h2>
+      <div id="heroImage">
+        <img src="images/lo-res/contact.jpg" alt="photo couple with a cellphone">
+      </div> <!--end heroImage Text -->
+      <div id="contactForm" class="form_over">
+        <h1>CONTACT US</h1>
+        <form action="email.php" method="POST" enctype="text/plain">
+          <input class="firstName" name="firstname" type="text" placeholder="First Name">
+          <input class="lastName" name="lastname" type="text" placeholder="Last Name">
+          <input class="email_subject" name="email" type="text" placeholder="Email">
+          <input class="email_subject" name="subject" type="text" placeholder="Subject">
+          <textarea class="message" name="msg" placeholder="Message"></textarea>
+          <input class="sendButtom" name="submit" type="submit" value="Send">
+        </form>
       </div> <!--end home tittle & text -->
     </section> <!--end home cover Section -->
 
     <footer id="mainFooter">
-      <div id="copyRight"><p>Copyright Info</p></div> <!--end copyright -->
+      <div id="copyRight"><p>Copyright © TILEX Beer With Mouthwash / The sale of intoxicating beverages to minors is prohibited.</p></div> <!--end copyright -->
     </footer> <!--end mainFooter -->
 
   </div> <!--end siteContainer -->

@@ -6,7 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Tilex Beer With Mouthwash</title>
 
-  <link rel="stylesheet" href="css/reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+  <link href="css/reset.css" rel="stylesheet" type="text/css">
   <link href="css/main.css" rel="stylesheet" type="text/css">
 
 </head>
@@ -17,20 +20,34 @@
   <div id="siteContainer">
 
     <header id="mainHeader">
-      <div id="logo"><p>Logo</p></div> <!--end logo -->
-      <nav id="mainNav"><p>Nav</p></nav> <!--end mainNav -->
+      <div id="logo">
+        <a href="index.html"><img src="images/header_logo.svg" alt="Tilex Logo"></a>
+      </div> <!--end logo -->
+      <nav id="mainNav">
+        <h1 class="hidden">Main Navigation</h1>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a class="active" href="about.html">ABOUT</a></li>
+            <li><a href="products.html">PRODUCTS</a></li>
+            <li><a href="advertisement.html">OUR LANGUAGE</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </nav> <!--end mainNav -->
     </header> <!--end mainHeader -->
 
     <section id="homeCover">
-      <div id="heroImage"><p>Hero Image</p></div> <!--end heroImage Text -->
-      <div id="coverTitle">
-        <h1>Main Title to the About Page</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec lectus semper, porttitor orci volutpat, congue ex. Aliquam sit amet tempor est. Aenean interdum aliquet enim, ac pretium orci ullamcorper sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec lectus semper, porttitor orci volutpat, congue ex. Aliquam sit amet tempor est. Aenean interdum aliquet enim, ac pretium orci ullamcorper sit amet.</p>
-      </div> <!--end home tittle & text -->
+      <div id="heroImage">
+        <img src="images/lo-res/about_cover.jpg" alt="main_photo_tilex_beers">
+        <div id="coverTitle" class="text_over">
+          <h1> THE GOOD LIFE DESERVES A SMILE</h1>
+          <p>BEER TILEX WITH MOUTHWASH IS DESIGNED FOR LOVERS OF THE GOOD LIFE, FOR FRIENDS WHO ENJOY FREE TIME WHILE SHARING UNFORGETTABLE MOMENTS, FOR THOSE WHO ENTERTAINMENT IS A LIFESTYLE BUT WITHOUT FORGETTING SELF-CARE.<br>BEER TILEX PROTECTS YOUR MOUTH BY ELIMINATING 99.9% OF BACTERIA WITHOUT SACRIFICING THE MAGNIFICENT TASTE OF OUR PRESENTATIONS.</p>
+        </div>
+      </div> <!--end heroImage Text -->
+
     </section> <!--end home cover Section -->
 
     <footer id="mainFooter">
-      <div id="copyRight"><p>Copyright Info</p></div> <!--end copyright -->
+      <div id="copyRight"><p>Copyright © TILEX Beer With Mouthwash / The sale of intoxicating beverages to minors is prohibited.</p></div> <!--end copyright -->
     </footer> <!--end mainFooter -->
 
   </div> <!--end siteContainer -->
