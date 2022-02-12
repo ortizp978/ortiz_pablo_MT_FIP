@@ -17,6 +17,9 @@ body {
 a:link, a:visited {
   display: inline;
   text-decoration: none;
+  -webkit-transition: width 0.5s, height 0.5s, transform 0.5s;
+	-moz-transition: width 0.5s, height 0.5s, transform 0.5s;
+	-o-transition: width 0.5s, height 0.5s, transform 0.5s;
   transition: width 0.5s, height 0.5s, transform 0.5s;
   color: #ffffff;
 }
@@ -154,7 +157,7 @@ a:active {
 #mainFooter {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   height: 50px;
   background-color: #C4CFDA;
   overflow: hidden;
@@ -164,6 +167,29 @@ a:active {
   width: 600px;
   color: #1C355E;
   font-size: 15px;
+}
+
+#copyRight span {
+  font-weight: bold;
+}
+
+.socialIcons {
+  display: flex;
+  width: 500px;
+  height: 40px;
+  flex-direction: row;
+  margin-right: 50px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.socialIcons img {
+  height: 25px;
+  margin-left: 10px;
+}
+
+#mainFooter a {
+  transition: none;
 }
 
 #productsContainer {
@@ -182,6 +208,22 @@ a:active {
   width: 360px;
   height: 180px;
   border-radius: 10px;
+}
+
+.product img {
+  animation-name: rotate;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-iteration-count: 2;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .product h1 {
